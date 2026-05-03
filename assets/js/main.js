@@ -37,9 +37,9 @@ function getGrauImc (imc) {
 }
 
 function getImc (peso, altura) {
-    imc = peso / ((altura / 100) ** 2);
+    const imc = peso / (altura ** 2)
     return imc.toFixed(2);
-} 
+}
 
 function criaP () {
     const p = document.createElement('p');
