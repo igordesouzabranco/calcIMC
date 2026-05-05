@@ -9,8 +9,11 @@
 </head>
 
 <body>
+    <nav class="nav">
+        <h1 class="nav-title">Calculadora de IMC</h1>
+    </nav>
     <section class="container">
-        <h1>Tabela IMC:</h1>
+        <h1 class="section-title">Tabela de IMC</h1>
         <table class="imc">
             <thead class="cabecalho">
                 <tr>
@@ -45,12 +48,12 @@
                 </tr>
             </tbody>
         </table>
-        <h1>Calcule seu IMC</h1>
+        <h1 class="text-form">Calcule seu IMC</h1>
         <form action="" class="formImc" id="formImc">
-            <label for="input-peso">Peso:</label>
+            <label for="input-peso" class="field-label">Peso:</label>
             <input type="number" id="peso" placeholder="Digite seu peso...">
 
-            <label for="input-peso">Altura (Em metros):</label>
+            <label for="input-altura" class="field-label">Altura (Em metros):</label>
             <input type="number" step="0.01" id="altura" placeholder="Digite sua altura em metros...">
 
             <button type="submit">Enviar</button>
