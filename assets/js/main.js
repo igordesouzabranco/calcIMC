@@ -21,8 +21,11 @@ form.addEventListener('submit', function (e) {
     const imc = getImc(peso, altura);
     const grauImc = getGrauImc(imc);
 
-    const msg = `Seu IMC é ${imc} (${grauImc}).`;
-    setResultado(msg, true);
+    const msg = `Seu IMC é ${imc.toFixed(2)} (${grauImc}).`;
+    const eSaudavel = imc > 18.4 && imc < 41;
+
+    setResultado(msg, eSaudavel);
+
 });
 
 function getGrauImc(imc) {
@@ -38,7 +41,7 @@ function getGrauImc(imc) {
 
 function getImc(peso, altura) {
     const imc = peso / (altura ** 2);
-    return imc.toFixed(2);
+    return imc;
 }
 
 function criaP() {
