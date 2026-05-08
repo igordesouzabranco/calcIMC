@@ -63,6 +63,14 @@ body {
     border-radius: 10px;
 }
 
+.title-table {
+    color: #1dcf68;
+}
+
+.danger {
+    color: #ff4800;
+}
+
 th {
     text-align: left;
     font-size: 24px;
@@ -90,7 +98,7 @@ form input:focus {
 }
 
 form button {
-    background-color: var(--primary-color);
+    background-color: #00ff80;
     color: #000000;
     font-size: 24px;
     cursor: pointer;
@@ -99,7 +107,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #c7a126;
+    background-color: #00c251;
 }
 
 form button:active {
@@ -112,8 +120,11 @@ form button:active {
 }
 
 .bad {
-    background: #ff3c00;
+    background: #ff0000;
     padding: 10px 20px;
 }
 
+.bad-text {
+    color: #ff0000;
+}
 

@@ -22,7 +22,7 @@ form.addEventListener('submit', function (e) {
     const grauImc = getGrauImc(imc);
 
     const msg = `Seu IMC é ${imc.toFixed(2)} (${grauImc}).`;
-    const eSaudavel = imc > 18.4 && imc < 41;
+    const eSaudavel = imc > 18.4 && imc < 30.00;
 
     setResultado(msg, eSaudavel);
 
