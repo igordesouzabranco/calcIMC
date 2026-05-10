@@ -1,4 +1,5 @@
 const form = document.querySelector('#formImc');
+const input = document.getElementById('darkmode-switch');
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -57,3 +58,7 @@ function setResultado(msg, isValid) {
     p.innerHTML = msg;
     resultado.appendChild(p);
 }
+
+input.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});

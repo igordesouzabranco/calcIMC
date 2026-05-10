@@ -12,6 +12,7 @@ body {
     background-color: var(--primary-color);
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s ease;
 }
 
 .nav {
@@ -69,6 +70,73 @@ body {
 
 .danger {
     color: #ff4800;
+}
+
+.darkmode {
+    width: 50px;
+    height: 20px;
+    display: block;
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0);
+    cursor: pointer;
+    margin: 8px;
+    transition: 0.6s;
+}
+
+.darkmode::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 18px;
+    position: absolute;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.6s;
+}
+
+#darkmode-switch {
+    display: none;
+}
+
+#darkmode-switch:checked + label {
+    background: #242424;
+}
+
+input:checked + .darkmode::after {
+    left: 30px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+label:active::after {
+    width: 30px;
+}
+
+body.dark-mode .nav {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+body.dark-mode {
+    background-color: #004219; /* Um preto/cinza escuro */
+    color: #ffffff;            /* Texto branco */
+}
+
+body.dark-mode .container {
+    background-color: #121212; /* Um preto/cinza escuro */
+    color: #e4ffdf;            /* Texto branco */
+}
+
+body.dark-mode .container .text-form{
+    background-color: #018117; /* Um preto/cinza escuro */
+    color: #e4ffdf;            /* Texto branco */
+}
+
+body.dark-mode .container .buttom-submit{
+    background-color: #018117; /* Um preto/cinza escuro */
+    color: #e4ffdf;            /* Texto branco */
 }
 
 th {
