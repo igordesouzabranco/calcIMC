@@ -203,6 +203,11 @@ body.dark-mode .container .buttom-submit{
     color: #e4ffdf;            
 }
 
+body.dark-mode .container .buttom-submit:hover{
+    background-color: #01410b; 
+    color: #e4ffdf;            
+}
+
 th {
     text-align: left;
     font-size: 24px;
