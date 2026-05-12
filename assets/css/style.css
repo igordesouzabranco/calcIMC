@@ -39,7 +39,7 @@ body {
 }
 
 .field-label {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -206,6 +206,35 @@ body.dark-mode .container .buttom-submit{
 body.dark-mode .container .buttom-submit:hover{
     background-color: #01410b; 
     color: #e4ffdf;            
+}
+
+#tooltip {
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px; 
+}
+
+#tooltip::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    opacity: 0;
+    transition: 0.3s ease all;
+    background-color: #000000;
+    color: #dadada;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#tooltip:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px); 
 }
 
 th {
