@@ -16,7 +16,7 @@ calcIMC is a lightweight tool designed to help users quickly calculate their Bod
 
 ## Screenshot
 
-![calcIMC Screenshot](./assets/images)
+![calcIMC Screenshot](assets/img/calcImc.png)
 
 ## Getting Started
 
