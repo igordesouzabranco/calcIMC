@@ -69,9 +69,13 @@ cd calcIMC
 ```
 calcIMC/
 ├── index.html          # Main HTML file
-├── style.css          # Styling
-├── script.js          # JavaScript logic
-└── README.md          # This file
+├── assets/             # Assets folder
+│   ├── css/            # Stylesheets
+│   │   └── style.css   # Main stylesheet
+│   ├── js/             # JavaScript files
+│   │   └── main.js     # Main JavaScript logic
+│   └── imgs/           # Images
+└── README.md           # This file
 ```
 
 ## Contributing
